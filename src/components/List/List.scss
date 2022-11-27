@@ -1,0 +1,12 @@
+.List{
+    width: 93%;
+    height: 60%;
+    background: linear-gradient(55deg, rgb(80, 58, 107), rgb(24, 47, 58));
+    background: rgba(90, 167, 156, 0.7);
+    border: 2px solid rgb(26, 70, 82);
+    border-radius: 10px;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

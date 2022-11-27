@@ -1,0 +1,67 @@
+.InputField{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    input{
+        padding: 20px;
+        width: 80%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(16, 33, 65);
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.6);
+        transition: 0.2s;
+        &::placeholder{
+            color: rgba(16, 33, 65, 0.5);
+            font-family: 'Varela Round', sans-serif;
+            font-weight: 600;
+        }
+        &:focus{
+            background: rgba(255, 255, 255, 0.9);
+        }
+        &:focus::placeholder{
+            visibility: hidden;
+        }
+    }
+    .btnBox{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+    }
+    button{
+        padding: 15px 25px;
+        border-radius: 15px;
+        border: none;
+        font-weight: 600;
+        font-family: 'Varela Round', sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5),
+                    1px -1px 1px rgba(0, 0, 0, 0.5),
+                    1px 1px 1px rgba(0, 0, 0, 0.5),
+                    -1px 1px 1px rgba(0, 0, 0, 0.5);
+        transition: 0.1s;
+        &:nth-child(1){
+            background: rgb(16, 153, 123);
+        }
+        &:nth-child(2){
+            background: rgb(190, 62, 62);
+        }
+        &:active{
+            transform: translateY(7%);
+        }
+        &:active:nth-child(1){
+            box-shadow: 0 0 5px 2px rgb(16, 153, 123);
+        }
+        &:active:nth-child(2){
+            box-shadow: 0 0 5px 2px rgb(190, 62, 62);
+        }
+    }
+}

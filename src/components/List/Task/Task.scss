@@ -1,0 +1,101 @@
+.Task{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(90deg, rgb(17, 44, 51), rgb(14, 28, 44));
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .textField{
+        height: 100%;
+        width: 80%;
+        overflow: auto hidden;
+        p{
+            font-weight: 600;
+            color: white;
+        }
+        p.complited{
+            text-decoration: 3px line-through;
+            text-decoration-color: rgb(245, 67, 150);
+        }
+        .editField{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                padding: 10px;
+                border: none;
+                outline: none;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.7);
+                font-family: 'Varela Round', sans-serif;
+                color: rgb(16, 33, 65);
+                font-weight: 600;
+                text-align: center;
+
+            }
+        }
+    }
+
+    #settings{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 1.4rem;
+        color: rgba(16, 33, 65, 1);
+        transition: 0.4s;
+        &.active{
+            box-shadow: 0 0 10px inset rgb(48, 197, 202);
+            background: rgb(194, 246, 248);
+        }
+        .options{
+            position: absolute;
+            right: 100%;
+            width: 0%;
+            height: 100%;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.4);
+            transition: 0.4s;
+            visibility: hidden;
+            display: flex;
+            overflow: hidden;
+            z-index: 2;
+            .btn{
+                height: 100%;
+                width: 33.33%;
+                background: linear-gradient(55deg, rgba(43, 193, 219, 0.9), rgba(255, 255, 255, 0.9));
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+        }
+        &.active .options{
+            width: 150px;
+            visibility: visible;
+        }
+
+    }
+    .saveBtn{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: 1.4rem;
+        color: rgba(16, 33, 65, 1);
+        transition: 0.4s;
+    }
+}
