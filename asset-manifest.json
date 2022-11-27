@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iList/static/css/main.86f953d2.css",
+    "main.js": "/iList/static/js/main.c5586dc0.js",
+    "index.html": "/iList/index.html",
+    "main.86f953d2.css.map": "/iList/static/css/main.86f953d2.css.map",
+    "main.c5586dc0.js.map": "/iList/static/js/main.c5586dc0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f953d2.css",
+    "static/js/main.c5586dc0.js"
+  ]
+}
